@@ -32,21 +32,6 @@
     inset 0 0 0 ${width}px ${color},
     inset 0 0 0 ${edge}px #111827;
 }
-
-[data-icon-favorite],
-[data-asset] svg:has(path[d^="M12,21.35"]),
-[data-asset] svg:has(path[d^="M12 21.35"]) {
-  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.8));
-}
-
-[data-icon-favorite] path,
-[data-asset] path[d^="M12,21.35"],
-[data-asset] path[d^="M12 21.35"] {
-  stroke: #111827;
-  stroke-width: 1.75;
-  stroke-linejoin: round;
-  paint-order: stroke fill;
-}
 `;
   }
 

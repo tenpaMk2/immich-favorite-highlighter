@@ -165,11 +165,6 @@ body.options .preview-heart {
   left: 8px;
   bottom: 8px;
   fill: #ffffff;
-  stroke: #111827;
-  stroke-width: 1.75;
-  stroke-linejoin: round;
-  paint-order: stroke fill;
-  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.8));
 }
 
 body.options button[type="submit"] {

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Immich Favorite Highlighter",
   "short_name": "Fav Highlighter",
-  "description": "💛 Immich のサムネイルで、お気に入り画像を枠と縁付きハートで強調。白いハートを見失わない。",
+  "description": "💛 Immich のサムネイルで、お気に入り画像の周りに枠を付けて強調。",
   "version": "1.0.0",
   "icons": {
     "16": "icons/icon16.png",
