@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Immich Fav Border オプション</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="options">
+    <main>
+      <h1>Immich Fav Border</h1>
+      <p>
+        🏠 自家ホスト Immich の URL と、お気に入りサムネの枠線を設定してください。この拡張はそのホストでのみ動作します。
+      </p>
+      <form id="options-form">
+        <label for="origin">Immich URL</label>
+        <input
+          id="origin"
+          name="origin"
+          type="url"
+          placeholder="https://photos.example.com"
+          autocomplete="url"
+          aria-describedby="status"
+        />
+
+        <label for="border-color">枠線の色</label>
+        <div class="color-row">
+          <input id="border-color" name="borderColor" type="color" value="#ffdd00" />
+          <span id="border-color-value">#ffdd00</span>
+        </div>
+
+        <label for="border-width">枠線の太さ</label>
+        <div class="width-row">
+          <input
+            id="border-width"
+            name="borderWidth"
+            type="range"
+            min="2"
+            max="8"
+            step="1"
+            value="3"
+          />
+          <span id="border-width-value">3px</span>
+        </div>
+
+        <div class="preview" aria-hidden="true">
+          <div class="preview-tile" id="preview-tile">
+            <svg class="preview-heart" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M12,21.35L10.55,20.03C5.4,15.36 2,12.28 2,8.5C2,5.42 3.77,3.5 6.5,3.5C8.24,3.5 9.91,4.32 11,5.65C12.09,4.32 13.76,3.5 15.5,3.5C18.23,3.5 20,5.42 20,8.5C20,12.28 16.6,15.36 11.45,20.03L12,21.35Z"
+              />
+            </svg>
+          </div>
+          <p>プレビュー（明るい写真の上でも見える想定）</p>
+        </div>
+
+        <button type="submit">保存</button>
+      </form>
+      <p class="status" id="status" role="status"></p>
+    </main>
+    <script src="shared.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
