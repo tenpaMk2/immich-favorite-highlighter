@@ -1,4 +1,4 @@
-const CONTENT_SCRIPT_ID = "immich-fav-border-content";
+const CONTENT_SCRIPT_ID = "immich-favorite-highlighter-content";
 
 async function unregisterScripts() {
   try {

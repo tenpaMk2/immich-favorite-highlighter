@@ -1,11 +1,11 @@
 (() => {
-  if (window.__immichFavBorderContentInstalled) {
+  if (window.__immichFavoriteHighlighterContentInstalled) {
     return;
   }
 
-  window.__immichFavBorderContentInstalled = true;
+  window.__immichFavoriteHighlighterContentInstalled = true;
 
-  const STYLE_ID = "immich-fav-border-style";
+  const STYLE_ID = "immich-favorite-highlighter-style";
 
   function buildCss(settings) {
     const color = sanitizeBorderColor(settings.borderColor);

@@ -1,4 +1,4 @@
-# Immich Fav Border
+# Immich Favorite Highlighter
 
 💛 Immich のタイムラインやアルバムで、お気に入り画像のサムネイルを強調する Chrome 拡張機能です。Brave でも動作します。
 
